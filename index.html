@@ -6,20 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-  
+ 
+
     
     <button id="exportButton">Выгрузить в Excel</button>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.3/xlsx.full.min.js"></script>
     <script type="module">
 
-        import { silpoExportToExcel } from './js/silpo.js/silpoExportToExcel.js';       
-        // import { metroExportToExcel } from './js/metro/metroExportToExcel.js';      
-        // import { ashanExportToExcel } from './js/ashan/ashanExportToExcel.js';
+        // import { silpoExportToExcel } from './js/silpo.js/silpoExportToExcel.js';       
+        // import { metroExportToExcel } from './js/metro/.js/metroExportToExcel.js';      
+        import { ashanExportToExcel } from './js/auchan.js/auchanExportToExcel.js';
         
-        document.getElementById('exportButton').addEventListener('click', silpoExportToExcel);  
+        // document.getElementById('exportButton').addEventListener('click', silpoExportToExcel);  
         // document.getElementById('exportButton').addEventListener('click', metroExportToExcel);   
-        // document.getElementById('exportButton').addEventListener('click', ashanExportToExcel);
+        document.getElementById('exportButton').addEventListener('click', ashanExportToExcel);
     
 
    
