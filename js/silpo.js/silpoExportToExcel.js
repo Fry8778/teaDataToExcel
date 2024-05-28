@@ -5,13 +5,23 @@ function silpoExportToExcel() {
         const productName = productNameElement ? productNameElement.innerText.toLowerCase() : ''; // Проверка существования элемента
             return  productName.includes("чай") ||
                     productName.includes("суміш") ||
+                    productName.includes("суміш чаїв") ||
+                    productName.includes("суміш чаю") ||
+                    productName.includes("колекція чаю") ||
                     productName.includes("чай чорний") ||        
+                    productName.includes("чорний чай") ||        
+                    productName.includes("чорний і зелений чай") ||        
+                    productName.includes("бленд чорного та зеленого чаю") ||        
                     productName.includes("чай трав'яний")  ||
+                    productName.includes("трав'яний чай")  ||
                     productName.includes("чай фруктовий") ||
                     productName.includes("чай фруктово-трав'яний") ||
                     productName.includes("напій фруктово-трав'яний") ||
                     productName.includes("суміш фруктово-ягідна") ||
                     productName.includes("чай фруктово-ягідний") ||
+                    productName.includes("чай фруктово-медовий") ||
+                    productName.includes("чай квітковий та ягідний") ||
+                    productName.includes("чай плодово-ягідний та квітковий") ||
                     productName.includes("суміш трав") ||
                     productName.includes("чай зелений")  ||
                     productName.includes("чайні набори") ||
@@ -20,10 +30,15 @@ function silpoExportToExcel() {
                     productName.includes("чай бірюзовий") ||
                     productName.includes("чай гречаний") ||
                     productName.includes("фіточай") ||
+                    productName.includes("фільтр–пакети для чаю") ||
                     productName.includes("напій на основі екстракту чорного чаю") ||
                     productName.includes("напій на основі зеленого чаю") ||
+                    productName.includes("подарунковий набір чаю") ||
+                    productName.includes("набір-асорті чаїв") ||
+                    productName.includes("набір-асорті чаю") ||
                     productName.includes("набір чаю") ||
-                    productName.includes("набір чаїв"); 
+                    productName.includes("набір чорного чаю") ||
+                    productName.includes("набір чаїв");   
     });
 
     const data = [[ 'Название товара',            
